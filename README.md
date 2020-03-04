@@ -1,2 +1,2 @@
-# php-helpers-bundle
+# helpers-bundle
 A Symfony Bundle with Helpers
