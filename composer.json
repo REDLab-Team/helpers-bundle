@@ -10,11 +10,14 @@
             "email": "motto@redlab.io"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "redlab-team/php-helpers": "^1.0",
         "symfony/framework-bundle": "^5.0"
     },
     "autoload": {
-        "RedlabTeam\\HelpersBundle\\": ""
+        "psr-4": {
+            "RedlabTeam\\HelpersBundle\\": ""
+        }
     }
 }
