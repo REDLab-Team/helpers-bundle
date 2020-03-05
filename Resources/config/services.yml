@@ -1,0 +1,9 @@
+parameters:
+
+services:
+    redlabteam_helpers.arr:
+        class: RedlabTeam\Helper\Arr
+    redlabteam_helpers.date:
+        class: RedlabTeam\Helper\Date
+    redlabteam_helpers.json:
+        class: RedlabTeam\Helper\Json

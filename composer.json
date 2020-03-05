@@ -1,0 +1,20 @@
+{
+    "name": "redlab-team/helpers-bundle",
+    "type": "symfony-bundle",
+    "description": "A Symfony Bundle with Helpers",
+    "keywords": ["helpers", "symfony"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jean-Baptiste Motto",
+            "email": "motto@redlab.io"
+        }
+    ],
+    "require": {
+        "redlab-team/php-helpers": "^1.0",
+        "symfony/framework-bundle": "^5.0"
+    },
+    "autoload": {
+        "RedlabTeam\\HelpersBundle\\": ""
+    }
+}
