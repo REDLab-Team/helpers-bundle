@@ -1,6 +1,6 @@
 <?php
 
-namespace RedlabTeam\HelpersBundle;
+namespace RedlabTeam\HelpersBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
