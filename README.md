@@ -12,6 +12,10 @@ A Bundle for Symfony 4+ with that provides simple PHP methods for OOP developmen
 $ composer require redlab-team/helpers-bundle
 ```
 
+## Usage
+This bundle is based on the package `php-helpers` available [on this repository](https://github.com/REDLab-Team/php-helpers).  
+The documentation of the helpers is in the [README.md file](https://github.com/REDLab-Team/php-helpers/blob/master/README.md).
+
 ## Configuration
 The default configuration is into the [service.yml file](./Resources/config/services.yml).  
 It is possible to override it into the configuration of your application.  
