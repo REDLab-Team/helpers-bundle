@@ -15,7 +15,7 @@ $ composer require redlab-team/helpers-bundle
 ## Configuration
 The default configuration is into the [service.yml file](./Resources/config/services.yml).  
 It is possible to override it into the configuration of your application.  
-````yaml
+```yaml
 parameters:
     # This variable allow the debug logs into the helpers methods
     redlabteam_helpers_debug: true
