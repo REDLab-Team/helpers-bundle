@@ -18,6 +18,10 @@ services:
         class: RedlabTeam\Helper\Date
     RedlabTeam\Helper\Date: '@redlabteam_helpers.date'
 
+    redlabteam_helpers.str:
+        class: RedlabTeam\Helper\Str
+    RedlabTeam\Helper\Str: '@redlabteam_helpers.str'
+
     redlabteam_helpers.json:
         class: RedlabTeam\HelpersBundle\Service\JsonService
         arguments:
