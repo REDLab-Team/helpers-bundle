@@ -36,13 +36,21 @@ services:
             $formatter: null
 
     # Below are the helpers that can be used as services
-    redlabteam_helpers.arr:
-        class: RedlabTeam\Helper\Arr
-    RedlabTeam\Helper\Arr: '@redlabteam_helpers.arr'
+    redlabteam_helpers.array:
+        class: RedlabTeam\HelpersBundle\Service\ArrayService
+        arguments:
+            $logger: '@logger'
+            $debug: '%redlabteam_helpers_debug%'
+            $noticeFailure: '%redlabteam_helpers_notice_failure%'
+    RedlabTeam\HelpersBundle\Service\ArrayService: '@redlabteam_helpers.array'
 
     redlabteam_helpers.date:
-        class: RedlabTeam\Helper\Date
-    RedlabTeam\Helper\Date: '@redlabteam_helpers.date'
+        class: RedlabTeam\HelpersBundle\Service\DateService
+        arguments:
+            $logger: '@logger'
+            $debug: '%redlabteam_helpers_debug%'
+            $noticeFailure: '%redlabteam_helpers_notice_failure%'
+    RedlabTeam\HelpersBundle\Service\DateService: '@redlabteam_helpers.date'
 
     redlabteam_helpers.json:
         class: RedlabTeam\HelpersBundle\Service\JsonService
@@ -52,9 +60,13 @@ services:
             $noticeFailure: '%redlabteam_helpers_notice_failure%'
     RedlabTeam\HelpersBundle\Service\JsonService: '@redlabteam_helpers.json'
 
-    redlabteam_helpers.str:
-        class: RedlabTeam\Helper\Str
-    RedlabTeam\Helper\Str: '@redlabteam_helpers.str'
+    redlabteam_helpers.string:
+        class: RedlabTeam\HelpersBundle\Service\StringService
+        arguments:
+            $logger: '@logger'
+            $debug: '%redlabteam_helpers_debug%'
+            $noticeFailure: '%redlabteam_helpers_notice_failure%'
+    RedlabTeam\HelpersBundle\Service\StringService: '@redlabteam_helpers.string'
 ```
 
 ## License
