@@ -12,7 +12,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "redlab-team/php-helpers": "^1.0",
+        "redlab-team/php-helpers": "^2.0",
         "symfony/framework-bundle": "^4.0|^5.0"
     },
     "autoload": {
