@@ -31,4 +31,47 @@ class ArrayService extends Arr
         $this->debug = $debug;
         $this->noticeFailure = $noticeFailure;
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function exists($value, array $array, $strict = false): bool
+    {
+        $this->debugLog($value);
+        $this->debugLog($array);
+
+        return parent::exists($value, $array, $strict);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function keys(array $array, $searchValue = null, bool $strict = false): array
+    {
+        $this->debugLog($array);
+        $this->debugLog($searchValue);
+
+        return parent::keys($array, $searchValue, $strict);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function values(array $array): array
+    {
+        $this->debugLog($array);
+
+        return parent::values($array);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function changeKeysCase(array $array, int $case = CASE_LOWER): array
+    {
+        $this->debugLog($array);
+        $this->debugLog($case);
+
+        return parent::changeKeysCase($array, $case);
+    }
 }
